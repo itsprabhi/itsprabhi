@@ -1,34 +1,57 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import '../style/header.css'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <div className = 'navbar'>
+    <div className = 'container'>
+        <nav>
+
+            <div className = 'nav-brand'>
+                <h3>
+                    Prabhi
+                </h3>
+            </div>
+
+            <div className = 'nav-items'>
+                <ul id = 'toggle-list'>
+                    <li className = 'nav-item'>
+                        <Link to = '/' className = 'nav-link'>
+                            Home
+                        </Link>
+                    </li>
+
+                    <li className = 'nav-item'>
+                        <Link to = '#work' className = 'nav-link'>
+                            Work
+                        </Link>
+                    </li>
+
+                    <li className = 'nav-item'>
+                        <Link to = '/blog' className = 'nav-link'>
+                            Blog
+                        </Link>
+                    </li>
+
+                    <li className = 'nav-item'>
+                        <Link to = '/about' className = 'nav-link'>
+                            About
+                        </Link>
+                    </li>
+
+                    <li className = 'nav-item'>
+                        <Link to = '#contact' className = 'nav-link'>
+                            Contact
+                        </Link>
+                    </li>
+
+                </ul>
+            </div>
+            <div className = 'toggle-bar' id = 'toggle'></div>
+        </nav>
     </div>
-  </header>
+</div>
 )
 
 Header.propTypes = {

@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,18 +25,51 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <div className = 'footer-items'>
+                <div className = 'footer-info-section'>
+                    <h3>
+                        Prabhi
+                    </h3>
+                    <p>
+                        A portfolio site made with passion to display my talent with people around the world.
+                    </p>
+                    <div className = 'footer-menu'>
+                        <ul className = 'footer-menu-list'>
+                            <li className = ' nav-item nav-item-footer'>
+                                <a href = '#' className = 'nav-link'>
+                                    Home
+                                </a>
+                            </li>
+                            <li className = ' nav-item nav-item-footer'>
+                                <a href = '#work' className = ' nav-link'>
+                                    Work
+                                </a>
+                            </li>
+                            <li className = ' nav-item nav-item-footer'>
+                                <a href = '#about' className = 'nav-link'>
+                                    About
+                                </a>
+                            </li>
+                            <li className = ' nav-item nav-item-footer'>
+                                <a href = '#contact' className = 'nav-link'>
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className = 'social-icons btn-div footer-social-links' >
+                    <ul>
+                  
+                    </ul>
+                </div>
+            </div>
+            <div className = 'copyright-restriction'>
+                <p>All rights reserved @2020. Prabhi</p>
+            </div>
         </footer>
       </div>
     </>
