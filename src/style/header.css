@@ -12,9 +12,6 @@ body,h1,h2,h3,h4,h5{
     margin: auto;
 }
 
-.site-header{
-    width: 100%;
-}
 
 .toggle-bar{
     display: none;
