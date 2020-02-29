@@ -32,7 +32,7 @@
     "gatsby"
   ],
   "license": "MIT",
-  "homepage": "https://itsprabhi.github.io/",
+  "homepage": "https://itsprabhi.github.io/itsprabhi",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -41,7 +41,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy":"gh-pages -d build"
+    "deploy":"gh-pages -d public"
   },
   "repository": {
     "type": "git",
