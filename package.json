@@ -19,6 +19,7 @@
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.53",
     "gatsby-transformer-sharp": "^2.3.13",
+    "gh-pages": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -31,6 +32,7 @@
     "gatsby"
   ],
   "license": "MIT",
+  "homepage": "https://itsprabhi.github.io/",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -38,7 +40,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy":"gh-pages -d build"
   },
   "repository": {
     "type": "git",
