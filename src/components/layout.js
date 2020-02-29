@@ -49,7 +49,12 @@ const Layout = ({ children }) => {
                                 </a>
                             </li>
                             <li className = ' nav-item nav-item-footer'>
-                                <a href = '#about' className = 'nav-link'>
+                                <a href = '/blog' className = ' nav-link'>
+                                    Blog
+                                </a>
+                            </li>
+                            <li className = ' nav-item nav-item-footer'>
+                                <a href = '/about' className = 'nav-link'>
                                     About
                                 </a>
                             </li>

@@ -79,3 +79,13 @@
     margin: 180px auto auto auto;
     width: 90%;
 }
+
+@media screen and (max-width:800px){
+    .blog-page-grid{
+        display: block;
+        width: 95%;
+    }
+    .post-thumbnail h1{
+        font-size: 35px;
+    }
+}

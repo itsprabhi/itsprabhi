@@ -47,7 +47,7 @@ const IndexPage = () => (
                                     me
                                 </p>
                                 <div className = 'intro-btn'>
-                                    <a className = 'into-btn-link' href = 'about.html'>
+                                    <a className = 'into-btn-link' href = '/about'>
                                         About
                                     </a>
                                 </div>
@@ -69,14 +69,14 @@ const IndexPage = () => (
             <div className = 'porfolio-list portfolio-grid' id = 'work'>
                 <div className = 'portfolio-card'>
                     <div className = 'portfolio-img wow fadeInLeft'>
-                        <img src = {TheLib} />
+                        <img src = {TheLib} alt = 'The library bar homepage' />
                     </div>
                     <div className = 'portfolio-card-txt'>
                         <h3>
                             The Library Bar
                         </h3>
                         <p>
-                            A website made for a restaurent for displaying their information and their menu to the customers. The frontend is powered by React and backend is developed on Firebase.  
+                            A restaurent website for ordering food and getting latest inforamtion about the restaurent and its events.
                         </p>
                         <p>
                             <span>Technology used - </span> React, Firebase
@@ -112,12 +112,12 @@ const IndexPage = () => (
                         </div>
                     </div>
                     <div className = 'portfolio-img wow fadeInRight'>
-                        <img src = {BusinessYoungstersImg} />
+                        <img src = {BusinessYoungstersImg} alt = 'Business youngsters homepage'/>
                     </div>
                 </div>
                 <div className = 'portfolio-card'>
                     <div className = 'portfolio-img wow fadeInLeft'>
-                        <img src = {ITPic} />
+                        <img src = {ITPic} alt = 'Start-uo homepage'/>
                     </div>
                     <div className = 'portfolio-card-txt'>
                         <h3>
@@ -149,14 +149,14 @@ const IndexPage = () => (
             </div>
             <div className = 'contact-content'>
                 <div className = 'contact-form'>
-                    <form action="/" method="post">
+                    <form action="mailto:iamprabhie@gmail.com" method="post">
                         <input type = 'text' className = 'input-form' id = 'name' name = 'name' placeholder="enter your name" /><br />
                         <input type = 'email' className = 'input-form' id = 'email' name = 'email' placeholder="enter your email" /><br />
                         <textarea name = 'messege' className = 'input-form text-messege' id = 'messege' placeholder="enter your messege"></textarea><br />
                         <div className = 'btn-div'>
-                            <a type="submit" className = 'btn-github work-btn nav-link'>
+                            <button type="submit" className = 'btn-github work-btn nav-link'>
                                 Submit
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
